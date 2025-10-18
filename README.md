@@ -27,7 +27,7 @@ Installation
 
 Clone the repository:
 
-git clone https://github.com/your-username/football-lineup-generator.git
+git clone https://github.com/zeeeeaaan/football-lineup-generator.git
 
 
 Open index.html in your browser.
