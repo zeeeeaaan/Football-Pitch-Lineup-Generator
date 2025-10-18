@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lineup Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 contenteditable="true" id="teamName">Your Team Name</h1>
+
+  <div class="controls">
+    <label>Formation:
+      <select id="formation">
+        <option value="4-4-2">4-4-2</option>
+        <option value="4-3-3">4-3-3</option>
+        <option value="3-5-2">3-5-2</option>
+      </select>
+    </label>
+    <label>Number of Players: 
+      <input type="number" id="playerCount" min="3" max="11" value="11">
+    </label>
+    <button id="generatePlayers">Generate Players</button>
+    <button id="downloadPitch">Download Pitch</button>
+  </div>
+
+  <div class="colorPanel">
+    <label>Player Color: <input type="color" id="playerColor" value="#ffd600"></label>
+  </div>
+
+  <div id="pitch"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
